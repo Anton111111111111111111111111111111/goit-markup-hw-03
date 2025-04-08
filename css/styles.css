@@ -1,6 +1,4 @@
-* {
-    box-sizing: border-box;
-  }
+* {box-sizing: border-box; }
   
   body {
     font-family: "Roboto", sans-serif;
@@ -8,19 +6,30 @@
     background-color: #ffffff; 
 }
 
-h1, h2, h3, h4, h5, h6, p {
-	margin: 0;}
+h1, h2, h3, h4, h5, h6, p {	margin: 0;}
 
 ul, ol {
 	margin: 0;
-	padding: 0;}
+	padding: 0;
+    list-style-type: none; }
 
-ul {
-    list-style-type: none;
+a { text-decoration: none; }
+img {display: block;}
+
+.container { 
+    max-width: 100%;
+    padding-left: 156px;
+    padding-right: 156px;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+   
 }
 
-a {
-    text-decoration: none;
+.head .container {
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .logo {
@@ -33,36 +42,32 @@ a {
     letter-spacing: 0.03em;    
 }
 
-.head, .header-nav, .nav-list, .contact-list {
-    display: flex;    
+.head, .header-nav, .nav-list, .contact-list, .contacts, .portfolio-sublist {
+    display: flex;
 }
+
 .header-nav, .contacts {
     margin-top: 24px;
 }
 
-.header-nav {margin-left: 156px;}
-
 .nav-list {
     margin-left: 76px;
-    margin-right: 332px;
     gap: 40px;
 }
-.contact-list {
-    gap: 40px;
+.contact-list { 
+    gap: 40px; 
+    position: absolute;
+    right: 156px;
 }
+
 .head {
-    width: 1440px;
     height: 72px;
     border: 1px solid #E7E9FC;
 }
 
-.header-logo-studio {
-    color: #2E2F42;
-}
+.header-logo-studio { color: #2E2F42; }
 
-.logo-studio {
-    color: #f4f4fd ;
-}
+.logo-studio { color: #f4f4fd; }
 
 .nav-link {
     font-size: 16px;
@@ -72,12 +77,13 @@ a {
     color: #2E2F42;
 }
 
-.nav-link:hover, .nav-link:focus {
-    color: #404BBF;
-}
+.nav-link:hover, .nav-link:focus, .contact-link:hover, .contact-link:focus { 
+    color: #404BBF; }
 
-.contacts {
-    font-style: normal;}
+.contacts { 
+    font-style: normal; 
+    margin-right: 156px;
+}
 
 .contact-link {
     color: #434455;
@@ -86,17 +92,22 @@ a {
     letter-spacing: 0.02em;
 }
 
-.contact-link:hover, .contact-link:focus {
-    color: #404BBF;
-}
-
-.section-main {
+.section-main { 
     background: #2E2F42;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section-main .container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;   
+    align-items: center; 
 }
 
 .title {
     color: white;
-    text-align: center;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
@@ -107,6 +118,9 @@ a {
     cursor: pointer;
     background: #4D5AE5;
     color: white;
+    width: 169px;
+    height: 56px;
+    border-radius: 4px;
     font-weight: 500;
     size: 16px;
     line-height: 1.5;
@@ -128,6 +142,20 @@ a {
     color: #2E2F42;
 }
 
+.section-advantages {
+    height: 344px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantages-list {
+    width: 1128px;
+    height: 104px;
+    gap: 24px;
+    display: flex;    
+}
+
 .section-subtitle {
     font-size: 20px;
     font-weight: 500;
@@ -136,58 +164,70 @@ a {
     color: #2E2F42;
 }
 
-.advantages-text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
 p {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-top: 8px;
 }
 
 .section-team {
     background: #F4F4FD;
+    height: 732px;
+    padding-top: 120px;
 }
 
 .team-list {
-    background-color: white;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 72px;
 }
 
-.team-title {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
+.team-item {
+    background-color: white;
+    width: 264px;
+    height: 380px;    
+}
+
+.team-item .section-subtitle {
+    text-align: center;
+    margin-top: 32px;
 }
 
 .team-text {
     text-align: center;
 }
 
-.portfolio-title {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
+.section-portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.portfolio-list {
+    margin-top: 72px;
+    justify-content: center;
+}
+.portfolio-sublist {
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.portfolio-item .section-subtitle {
+    margin-top: 32px;
 }
 
 .footer {
     background: #2E2F42;
-    width: 1440px;
 }
-.footer-cont {
-    display: flex;
-    flex-direction: column;
+
+.footer .container {
     gap: 16px;
-    padding-left: 156px;
     justify-content: center;
-    width: 1440px;
     height: 312px;
 }
+
 .footer-text {
     color:#F4F4FD;
     width: 264px;
