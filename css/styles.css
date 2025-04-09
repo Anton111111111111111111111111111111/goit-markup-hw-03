@@ -30,7 +30,6 @@ img {display: block;}
     justify-content: space-between;
     width: 1158px;/**/
     margin: 0 auto;/**/
-
 }
 
 .logo {
@@ -157,6 +156,14 @@ img {display: block;}
     padding: 120px 0;
 }
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    
+}
+
 .advantages-list {
     width: 1128px;
     height: 104px;
@@ -275,7 +282,6 @@ p {
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
-    letter-spacing: 0.03em;    
-    margin-right: 76px;/**/
+    letter-spacing: 0.03em;
     margin-bottom: 16px;
 }
