@@ -18,7 +18,6 @@ img {display: block;}
 
 .container { 
     max-width: 100%;
-    padding-right: 156px;
     margin-left: 0;
     margin-right: 0;
     display: flex;
@@ -229,8 +228,6 @@ p {
 .section-portfolio {
     padding-top: 120px; 
     padding-bottom: 120px;
-    padding-left: 156px;
-    padding-right: 156px;
 }
 
 .portfolio-list {
@@ -238,6 +235,7 @@ p {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
+    margin-left: 156px;
 }
 
 .portfolio-item {
@@ -270,6 +268,7 @@ p {
 }
 
 .container-logo {
+    display: inline-block;
     text-transform: uppercase;
     font-family: "Raleway", sans-serif;
     color: #4d5ae5;    
@@ -279,5 +278,4 @@ p {
     letter-spacing: 0.03em;    
     margin-right: 76px;/**/
     margin-bottom: 16px;
-    display: inline-block;
 }
