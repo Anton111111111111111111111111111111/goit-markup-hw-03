@@ -20,12 +20,12 @@ img {display: block;}
     max-width: 100%;
     margin-left: 0;
     margin-right: 0;
-    display: flex;
     flex-direction: column;
     padding: 0 15px;/**/
 }
 
 .head .container {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 1158px;/**/
