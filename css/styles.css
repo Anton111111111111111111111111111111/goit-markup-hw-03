@@ -280,7 +280,7 @@ p {
 }
 
 .footer-logo {
-    display: inline-block;
+    display: block;
     text-transform: uppercase;
     font-family: "Raleway", sans-serif;
     color: #4d5ae5;    
